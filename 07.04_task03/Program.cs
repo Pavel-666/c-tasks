@@ -1,4 +1,4 @@
-﻿Сonsole.WriteLine("Введите порядковый номер дня недели");
+﻿Console.WriteLine("Введите порядковый номер дня недели");
 int NumberDay = Convert.ToInt32(Console.ReadLine());
 
 if (NumberDay == 1)
@@ -15,4 +15,5 @@ if (NumberDay == 6)
     Console.WriteLine("суббота");
 if (NumberDay == 7)
     Console.WriteLine("воскресение");
-else Console.WriteLine("такого дня недели нет");
+if (NumberDay >7)
+    Console.WriteLine("такого дня недели нет");
