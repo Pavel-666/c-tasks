@@ -7,7 +7,7 @@ Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
 int PrintInt = 2;
 
-while (PrintInt < number)
+while (PrintInt <= number)
 {
     Console.Write($" {PrintInt}");
     PrintInt = PrintInt + 2;
