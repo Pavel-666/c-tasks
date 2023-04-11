@@ -9,8 +9,23 @@
 int number = new Random().Next(10, 100);
 
 Console.WriteLine($"случайное число {number}");
-int FirstDigit = number / 10;
-int SecondGigit = number % 10;
-if (FirstDigit > SecondGigit)
-    Console.WriteLine($"наибольшая цифра {FirstDigit}");
-else Console.WriteLine($"наибольшая цифра {SecondGigit}");
+int firstDigit = number / 10;
+int secondGigit = number % 10;
+// if (FirstDigit > SecondGigit)
+//     Console.WriteLine($"наибольшая цифра {FirstDigit}");
+// else Console.WriteLine($"наибольшая цифра {SecondGigit}");
+
+
+// int maxDigit = firstDigit > secondGigit ? firstDigit : secondGigit;
+// Console.WriteLine($"Наибольшая цифра числа -> {maxDigit}");
+
+int MaxDigit(int num)
+{
+    int firstDigit = num / 10;
+    int secondGigit = num % 10;
+    int maxDigit = firstDigit > secondGigit ? firstDigit : secondGigit;
+    return maxDigit;
+}
+
+int maxDigit = MaxDigit(number);
+Console.WriteLine($"Наибольшая цифра числа -> {maxDigit}");
