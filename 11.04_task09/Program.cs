@@ -8,4 +8,9 @@
 
 int number = new Random().Next(10, 100);
 
-Console.Write($"случайное число {number}");
+Console.WriteLine($"случайное число {number}");
+int FirstDigit = number / 10;
+int SecondGigit = number % 10;
+if (FirstDigit > SecondGigit)
+    Console.WriteLine($"наибольшая цифра {FirstDigit}");
+else Console.WriteLine($"наибольшая цифра {SecondGigit}");
